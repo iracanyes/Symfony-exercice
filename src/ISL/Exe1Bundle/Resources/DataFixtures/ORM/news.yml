@@ -1,0 +1,17 @@
+# FIxtures pour Exe1Bundle:Image
+# Respecter l'indentation, les espaces et guillemets simples pour la fixtures à créer
+ISL\Exe1Bundle\Entity\Image:
+    image_{1..6}: 
+        title: '<sentence()>'
+        src: 'http://placekitten.com/g/200/200'
+        alt: '<sentence()>'
+
+# Fixtures exe1 news
+#Voir utilisation sur https://github.com/nelmio/alice/blob/HEAD/doc/complete-reference.md#yaml
+ISL\Exe1Bundle\Entity\News:
+    news_{1..6}:
+        title: '<sentence()>'
+        content: '<text(500)>'
+        author: '<firstname()> <lastname()>'
+        date: '<dateTimeBetween("-200 days", "now")>'
+        image: '@image_{1..6}'

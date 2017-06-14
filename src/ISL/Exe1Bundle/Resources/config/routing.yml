@@ -1,0 +1,10 @@
+isl_exe1_home:
+    path:     /
+    defaults: { _controller: ISLExe1Bundle:News:home }
+
+isl_exe1_view:
+    path:   /view/{id}
+    defaults: { _controller: ISLExe1Bundle:News:newsDetail }
+    requirements:
+        id: \d+
+       

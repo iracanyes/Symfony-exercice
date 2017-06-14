@@ -1,0 +1,7 @@
+isl_exe1:
+    resource: "@ISLExe1Bundle/Resources/config/routing.yml"
+    prefix:   /exe1
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
